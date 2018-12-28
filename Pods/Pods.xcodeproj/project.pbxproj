@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0736157C9B2ED1F5EC09B339814401FB /* Pods-Speech Editor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFBD520D66276484DB48E1E0C0A4F03 /* Pods-Speech Editor-dummy.m */; };
+		1588EDFF002040C1834B60AFE533CBD6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		1EBB9B6AA9CC743EA3CC1EE607EC829D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		47D90F5899EF48FE650DFE5FC270AE92 /* Pods-Speech Editor-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F4B24FFF5A84AC9037D32EBF53340D99 /* Pods-Speech Editor-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E01BD1C2658E4327D83F5E853F04E80 /* KDDragAndDropCollectionViews-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 37C625AC28592769A05E55C4997E2B0D /* KDDragAndDropCollectionViews-dummy.m */; };
+		67EA006AAD58AC3928CF9B4D5F64FE79 /* KDDragAndDropCollectionViews-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 010770A69898CC81A75291287A777EE2 /* KDDragAndDropCollectionViews-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA27FB5A0FD780EB81C9CDF143E7CADB /* KDDragAndDropManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C250D1593719310F8E53367DC7FA1EC1 /* KDDragAndDropManager.swift */; };
+		F6E96EEBC4C3CB759D98AB5B2D1B3213 /* KDDragAndDropCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63031E292E41BF76EDF8C985729E8D15 /* KDDragAndDropCollectionView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7FEC2EAE3C9FA97132FD234D50D4038F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A1C22076E06B59806B0AC7778D65F36;
+			remoteInfo = KDDragAndDropCollectionViews;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		010770A69898CC81A75291287A777EE2 /* KDDragAndDropCollectionViews-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KDDragAndDropCollectionViews-umbrella.h"; sourceTree = "<group>"; };
+		020CE4C42D9F7B5C63DA7701FEB91ED9 /* Pods-Speech Editor.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Speech Editor.modulemap"; sourceTree = "<group>"; };
+		1C63059C28F6F2182680E80E412690A3 /* KDDragAndDropCollectionViews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KDDragAndDropCollectionViews.framework; path = KDDragAndDropCollectionViews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F66209175B9C6392B37E75442F29EEC /* Pods-Speech Editor-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Speech Editor-acknowledgements.plist"; sourceTree = "<group>"; };
+		241052A38977A721AF84877913295883 /* Pods-Speech Editor-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Speech Editor-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2FA12E17F6484593E04697CD99332918 /* Pods-Speech Editor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Speech Editor.debug.xcconfig"; sourceTree = "<group>"; };
+		340C93EB53C4E88DFE0F0D965D66C447 /* KDDragAndDropCollectionViews.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KDDragAndDropCollectionViews.modulemap; sourceTree = "<group>"; };
+		37C625AC28592769A05E55C4997E2B0D /* KDDragAndDropCollectionViews-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KDDragAndDropCollectionViews-dummy.m"; sourceTree = "<group>"; };
+		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		62797C462B9F18B1F9BA28D20D6CC286 /* Pods-Speech Editor-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Speech Editor-resources.sh"; sourceTree = "<group>"; };
+		63031E292E41BF76EDF8C985729E8D15 /* KDDragAndDropCollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KDDragAndDropCollectionView.swift; path = Classes/KDDragAndDropCollectionView.swift; sourceTree = "<group>"; };
+		6303CADC53333B6EE77DECF7B984C28E /* Pods-Speech Editor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Speech Editor.release.xcconfig"; sourceTree = "<group>"; };
+		71BEBFFB32A682C9D87FF8BF0BDEC356 /* Pods_Speech_Editor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Speech_Editor.framework; path = "Pods-Speech Editor.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		893DF8A8407ED5CCBECC9663E7F6BF7F /* Pods-Speech Editor-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Speech Editor-frameworks.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F0D558A8CD3D5E935CFEA1B2E6B77B9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9552A86AAC3C72725EDCDDD31BB7C8A /* KDDragAndDropCollectionViews-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KDDragAndDropCollectionViews-prefix.pch"; sourceTree = "<group>"; };
+		C250D1593719310F8E53367DC7FA1EC1 /* KDDragAndDropManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KDDragAndDropManager.swift; path = Classes/KDDragAndDropManager.swift; sourceTree = "<group>"; };
+		C639EF97CAB424A8060AE8B32A9DC9BB /* KDDragAndDropCollectionViews.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KDDragAndDropCollectionViews.xcconfig; sourceTree = "<group>"; };
+		CB399965BB0E3D0205042D7EC3284AD4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCFBD520D66276484DB48E1E0C0A4F03 /* Pods-Speech Editor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Speech Editor-dummy.m"; sourceTree = "<group>"; };
+		F4B24FFF5A84AC9037D32EBF53340D99 /* Pods-Speech Editor-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Speech Editor-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0AD2441F60C977ABA7E9790C20566AD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1588EDFF002040C1834B60AFE533CBD6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		586D957955AB5152B09B92EA61C6184D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EBB9B6AA9CC743EA3CC1EE607EC829D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13EECF317A6003F39509E320B063032C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				218B66ED34A147D3241E4183B222CCEC /* KDDragAndDropCollectionViews */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		218B66ED34A147D3241E4183B222CCEC /* KDDragAndDropCollectionViews */ = {
+			isa = PBXGroup;
+			children = (
+				63031E292E41BF76EDF8C985729E8D15 /* KDDragAndDropCollectionView.swift */,
+				C250D1593719310F8E53367DC7FA1EC1 /* KDDragAndDropManager.swift */,
+				998217661D0CBCD67343AE1CEC6C0C0D /* Support Files */,
+			);
+			name = KDDragAndDropCollectionViews;
+			path = KDDragAndDropCollectionViews;
+			sourceTree = "<group>";
+		};
+		5211AF14C4A977A5D850F5B8417287E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1C63059C28F6F2182680E80E412690A3 /* KDDragAndDropCollectionViews.framework */,
+				71BEBFFB32A682C9D87FF8BF0BDEC356 /* Pods_Speech_Editor.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		76F125A6028ADB7E0E775B44FA1590F4 /* Pods-Speech Editor */ = {
+			isa = PBXGroup;
+			children = (
+				CB399965BB0E3D0205042D7EC3284AD4 /* Info.plist */,
+				020CE4C42D9F7B5C63DA7701FEB91ED9 /* Pods-Speech Editor.modulemap */,
+				241052A38977A721AF84877913295883 /* Pods-Speech Editor-acknowledgements.markdown */,
+				1F66209175B9C6392B37E75442F29EEC /* Pods-Speech Editor-acknowledgements.plist */,
+				CCFBD520D66276484DB48E1E0C0A4F03 /* Pods-Speech Editor-dummy.m */,
+				893DF8A8407ED5CCBECC9663E7F6BF7F /* Pods-Speech Editor-frameworks.sh */,
+				62797C462B9F18B1F9BA28D20D6CC286 /* Pods-Speech Editor-resources.sh */,
+				F4B24FFF5A84AC9037D32EBF53340D99 /* Pods-Speech Editor-umbrella.h */,
+				2FA12E17F6484593E04697CD99332918 /* Pods-Speech Editor.debug.xcconfig */,
+				6303CADC53333B6EE77DECF7B984C28E /* Pods-Speech Editor.release.xcconfig */,
+			);
+			name = "Pods-Speech Editor";
+			path = "Target Support Files/Pods-Speech Editor";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				13EECF317A6003F39509E320B063032C /* Pods */,
+				5211AF14C4A977A5D850F5B8417287E7 /* Products */,
+				DFE796E76B4EF82892BF40C951AC46A3 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		998217661D0CBCD67343AE1CEC6C0C0D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9F0D558A8CD3D5E935CFEA1B2E6B77B9 /* Info.plist */,
+				340C93EB53C4E88DFE0F0D965D66C447 /* KDDragAndDropCollectionViews.modulemap */,
+				C639EF97CAB424A8060AE8B32A9DC9BB /* KDDragAndDropCollectionViews.xcconfig */,
+				37C625AC28592769A05E55C4997E2B0D /* KDDragAndDropCollectionViews-dummy.m */,
+				B9552A86AAC3C72725EDCDDD31BB7C8A /* KDDragAndDropCollectionViews-prefix.pch */,
+				010770A69898CC81A75291287A777EE2 /* KDDragAndDropCollectionViews-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KDDragAndDropCollectionViews";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DFE796E76B4EF82892BF40C951AC46A3 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				76F125A6028ADB7E0E775B44FA1590F4 /* Pods-Speech Editor */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6E69F6A704B931F523728C306098B7F6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47D90F5899EF48FE650DFE5FC270AE92 /* Pods-Speech Editor-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D05E38385E305591654FB588B2F4A41E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67EA006AAD58AC3928CF9B4D5F64FE79 /* KDDragAndDropCollectionViews-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2A1C22076E06B59806B0AC7778D65F36 /* KDDragAndDropCollectionViews */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E8ACD71CDADA2E43C1280F7E53B47CB /* Build configuration list for PBXNativeTarget "KDDragAndDropCollectionViews" */;
+			buildPhases = (
+				89258FA2237A8E3A00FD8124DDFD1D7D /* Sources */,
+				586D957955AB5152B09B92EA61C6184D /* Frameworks */,
+				D05E38385E305591654FB588B2F4A41E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KDDragAndDropCollectionViews;
+			productName = KDDragAndDropCollectionViews;
+			productReference = 1C63059C28F6F2182680E80E412690A3 /* KDDragAndDropCollectionViews.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5D37313806553099E93B5B2EE0BD0DD6 /* Pods-Speech Editor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A1E6EFF2D3F11356EE188B3BC39615B /* Build configuration list for PBXNativeTarget "Pods-Speech Editor" */;
+			buildPhases = (
+				99414135C1A21BF5BEEFDCBD94268016 /* Sources */,
+				0AD2441F60C977ABA7E9790C20566AD1 /* Frameworks */,
+				6E69F6A704B931F523728C306098B7F6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				382A50F8EDBA46CCEE081B9717DE868E /* PBXTargetDependency */,
+			);
+			name = "Pods-Speech Editor";
+			productName = "Pods-Speech Editor";
+			productReference = 71BEBFFB32A682C9D87FF8BF0BDEC356 /* Pods_Speech_Editor.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 5211AF14C4A977A5D850F5B8417287E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2A1C22076E06B59806B0AC7778D65F36 /* KDDragAndDropCollectionViews */,
+				5D37313806553099E93B5B2EE0BD0DD6 /* Pods-Speech Editor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		89258FA2237A8E3A00FD8124DDFD1D7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6E96EEBC4C3CB759D98AB5B2D1B3213 /* KDDragAndDropCollectionView.swift in Sources */,
+				4E01BD1C2658E4327D83F5E853F04E80 /* KDDragAndDropCollectionViews-dummy.m in Sources */,
+				DA27FB5A0FD780EB81C9CDF143E7CADB /* KDDragAndDropManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99414135C1A21BF5BEEFDCBD94268016 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0736157C9B2ED1F5EC09B339814401FB /* Pods-Speech Editor-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		382A50F8EDBA46CCEE081B9717DE868E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KDDragAndDropCollectionViews;
+			target = 2A1C22076E06B59806B0AC7778D65F36 /* KDDragAndDropCollectionViews */;
+			targetProxy = 7FEC2EAE3C9FA97132FD234D50D4038F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		063198AB09B9CDB3A695432FC17AD8CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		3E8B4806623B47F2A8B4F1157C7B3CBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C639EF97CAB424A8060AE8B32A9DC9BB /* KDDragAndDropCollectionViews.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KDDragAndDropCollectionViews/KDDragAndDropCollectionViews-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KDDragAndDropCollectionViews/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/KDDragAndDropCollectionViews/KDDragAndDropCollectionViews.modulemap";
+				PRODUCT_MODULE_NAME = KDDragAndDropCollectionViews;
+				PRODUCT_NAME = KDDragAndDropCollectionViews;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4BE3E9A30B2F0C0E4DE40049A1AE04FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FA12E17F6484593E04697CD99332918 /* Pods-Speech Editor.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Speech Editor/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Speech Editor/Pods-Speech Editor.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		71BBC12FA97FCFDE278300B7FB9B0B21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6303CADC53333B6EE77DECF7B984C28E /* Pods-Speech Editor.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Speech Editor/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Speech Editor/Pods-Speech Editor.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		87EAC867385563488A6D8F1E74AC46B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C6E0C2FEE545008482DA2586E609C873 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C639EF97CAB424A8060AE8B32A9DC9BB /* KDDragAndDropCollectionViews.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KDDragAndDropCollectionViews/KDDragAndDropCollectionViews-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KDDragAndDropCollectionViews/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/KDDragAndDropCollectionViews/KDDragAndDropCollectionViews.modulemap";
+				PRODUCT_MODULE_NAME = KDDragAndDropCollectionViews;
+				PRODUCT_NAME = KDDragAndDropCollectionViews;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87EAC867385563488A6D8F1E74AC46B4 /* Debug */,
+				063198AB09B9CDB3A695432FC17AD8CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E8ACD71CDADA2E43C1280F7E53B47CB /* Build configuration list for PBXNativeTarget "KDDragAndDropCollectionViews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6E0C2FEE545008482DA2586E609C873 /* Debug */,
+				3E8B4806623B47F2A8B4F1157C7B3CBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A1E6EFF2D3F11356EE188B3BC39615B /* Build configuration list for PBXNativeTarget "Pods-Speech Editor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BE3E9A30B2F0C0E4DE40049A1AE04FE /* Debug */,
+				71BBC12FA97FCFDE278300B7FB9B0B21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module KDDragAndDropCollectionViews {
+  umbrella header "KDDragAndDropCollectionViews-umbrella.h"
+
+  export *
+  module * { export * }
+}

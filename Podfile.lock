@@ -1,0 +1,16 @@
+PODS:
+  - KDDragAndDropCollectionViews (1.5.1)
+
+DEPENDENCIES:
+  - KDDragAndDropCollectionViews (~> 1.5.1)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - KDDragAndDropCollectionViews
+
+SPEC CHECKSUMS:
+  KDDragAndDropCollectionViews: 96ffdc53d3e06d359110485f04c16cdfd7b13e4b
+
+PODFILE CHECKSUM: 0256dad048d04f6ee49a73522c95ae26ea373a1f
+
+COCOAPODS: 1.5.2

@@ -41,10 +41,9 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         self.dismiss(animated: true, completion: nil)
         
         // We create a VideoEditorViewController to play video as well as for editing purpose
-        let MainEditorVC = MainEditorViewController()
-        MainEditorVC.videoURL = videoURL
-        MainEditorVC.videoAsset = AVURLAsset(url: videoURL!)
-        self.present(MainEditorVC, animated: true, completion: nil)
+        let MainEditorVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "EditorViewController") as! EditorViewController
+        MainEditorVC.videoURLOptional = videoURL
+        self.present(MainEditorVC, animated: false, completion: nil)
     }
 }
 

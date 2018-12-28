@@ -7,17 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E227EADD54D0456AA0FFB21 /* Pods_Speech_Editor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A207CD6BB7D9514D01129F2 /* Pods_Speech_Editor.framework */; };
+		1A3E4CE421D56FAB00EB7DC9 /* editorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3E4CE321D56FAB00EB7DC9 /* editorViewController.swift */; };
+		1A3E4CEC21D5710A00EB7DC9 /* AAPlayerRotateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3E4CE621D5710A00EB7DC9 /* AAPlayerRotateButton.swift */; };
+		1A3E4CED21D5710A00EB7DC9 /* AAPlayerSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3E4CE721D5710A00EB7DC9 /* AAPlayerSlider.swift */; };
+		1A3E4CEE21D5710A00EB7DC9 /* AAPlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3E4CE821D5710A00EB7DC9 /* AAPlayButton.swift */; };
+		1A3E4CEF21D5710A00EB7DC9 /* AAPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3E4CE921D5710A00EB7DC9 /* AAPlayer.swift */; };
+		1A3E4CF021D5710A00EB7DC9 /* AAPlayerActivityIndicicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3E4CEA21D5710A00EB7DC9 /* AAPlayerActivityIndicicatorView.swift */; };
+		1A3E4CF121D5710A00EB7DC9 /* AAPlayProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3E4CEB21D5710A00EB7DC9 /* AAPlayProgressView.swift */; };
 		B141AAAC21A8B49A0020B02A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B141AAAB21A8B49A0020B02A /* AppDelegate.swift */; };
 		B141AAAE21A8B49A0020B02A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B141AAAD21A8B49A0020B02A /* MainViewController.swift */; };
 		B141AAB121A8B49A0020B02A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B141AAAF21A8B49A0020B02A /* Main.storyboard */; };
 		B141AAB321A8B4A80020B02A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B141AAB221A8B4A80020B02A /* Assets.xcassets */; };
 		B141AAB621A8B4A80020B02A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B141AAB421A8B4A80020B02A /* LaunchScreen.storyboard */; };
-		B141AAC221A8B5510020B02A /* MainEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B141AAC121A8B5510020B02A /* MainEditorViewController.swift */; };
-		B141AAC421A8B8CB0020B02A /* videoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B141AAC321A8B8CB0020B02A /* videoPlayerView.swift */; };
 		B1521DEA21D4A1DA0051DDF2 /* AVAssetExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1521DE921D4A1DA0051DDF2 /* AVAssetExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A3E4CE321D56FAB00EB7DC9 /* editorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = editorViewController.swift; sourceTree = "<group>"; };
+		1A3E4CE621D5710A00EB7DC9 /* AAPlayerRotateButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AAPlayerRotateButton.swift; sourceTree = "<group>"; };
+		1A3E4CE721D5710A00EB7DC9 /* AAPlayerSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AAPlayerSlider.swift; sourceTree = "<group>"; };
+		1A3E4CE821D5710A00EB7DC9 /* AAPlayButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AAPlayButton.swift; sourceTree = "<group>"; };
+		1A3E4CE921D5710A00EB7DC9 /* AAPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AAPlayer.swift; sourceTree = "<group>"; };
+		1A3E4CEA21D5710A00EB7DC9 /* AAPlayerActivityIndicicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AAPlayerActivityIndicicatorView.swift; sourceTree = "<group>"; };
+		1A3E4CEB21D5710A00EB7DC9 /* AAPlayProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AAPlayProgressView.swift; sourceTree = "<group>"; };
+		58DB3882203144E8E632A647 /* Pods-Speech Editor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Speech Editor.release.xcconfig"; path = "Pods/Target Support Files/Pods-Speech Editor/Pods-Speech Editor.release.xcconfig"; sourceTree = "<group>"; };
+		68AEEA29F2AD74055335E085 /* Pods-Speech Editor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Speech Editor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Speech Editor/Pods-Speech Editor.debug.xcconfig"; sourceTree = "<group>"; };
+		9A207CD6BB7D9514D01129F2 /* Pods_Speech_Editor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Speech_Editor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B141AAA821A8B49A0020B02A /* Speech Editor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Speech Editor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B141AAAB21A8B49A0020B02A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B141AAAD21A8B49A0020B02A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -25,8 +41,6 @@
 		B141AAB221A8B4A80020B02A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B141AAB521A8B4A80020B02A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B141AAB721A8B4A80020B02A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B141AAC121A8B5510020B02A /* MainEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainEditorViewController.swift; sourceTree = "<group>"; };
-		B141AAC321A8B8CB0020B02A /* videoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = videoPlayerView.swift; sourceTree = "<group>"; };
 		B1521DE921D4A1DA0051DDF2 /* AVAssetExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVAssetExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -35,17 +49,51 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E227EADD54D0456AA0FFB21 /* Pods_Speech_Editor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A3E4CE521D570C000EB7DC9 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				B1521DE921D4A1DA0051DDF2 /* AVAssetExtension.swift */,
+				1A3E4CE821D5710A00EB7DC9 /* AAPlayButton.swift */,
+				1A3E4CE921D5710A00EB7DC9 /* AAPlayer.swift */,
+				1A3E4CEA21D5710A00EB7DC9 /* AAPlayerActivityIndicicatorView.swift */,
+				1A3E4CE621D5710A00EB7DC9 /* AAPlayerRotateButton.swift */,
+				1A3E4CE721D5710A00EB7DC9 /* AAPlayerSlider.swift */,
+				1A3E4CEB21D5710A00EB7DC9 /* AAPlayProgressView.swift */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		3D21009607DEBABDF01368D7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				68AEEA29F2AD74055335E085 /* Pods-Speech Editor.debug.xcconfig */,
+				58DB3882203144E8E632A647 /* Pods-Speech Editor.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7BD6095B5A1D20720497EBC9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A207CD6BB7D9514D01129F2 /* Pods_Speech_Editor.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B141AA9F21A8B49A0020B02A = {
 			isa = PBXGroup;
 			children = (
 				B141AAAA21A8B49A0020B02A /* Speech Editor */,
 				B141AAA921A8B49A0020B02A /* Products */,
+				3D21009607DEBABDF01368D7 /* Pods */,
+				7BD6095B5A1D20720497EBC9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,10 +108,11 @@
 		B141AAAA21A8B49A0020B02A /* Speech Editor */ = {
 			isa = PBXGroup;
 			children = (
+				B141AAAB21A8B49A0020B02A /* AppDelegate.swift */,
 				B141AABD21A8B4C20020B02A /* Landing Page */,
 				B141AABE21A8B50A0020B02A /* MainEditor Scene */,
-				B141AAAB21A8B49A0020B02A /* AppDelegate.swift */,
 				B141AAB221A8B4A80020B02A /* Assets.xcassets */,
+				B141AAAF21A8B49A0020B02A /* Main.storyboard */,
 				B141AAB421A8B4A80020B02A /* LaunchScreen.storyboard */,
 				B141AAB721A8B4A80020B02A /* Info.plist */,
 			);
@@ -73,7 +122,6 @@
 		B141AABD21A8B4C20020B02A /* Landing Page */ = {
 			isa = PBXGroup;
 			children = (
-				B141AAAF21A8B49A0020B02A /* Main.storyboard */,
 				B141AAAD21A8B49A0020B02A /* MainViewController.swift */,
 			);
 			path = "Landing Page";
@@ -82,19 +130,10 @@
 		B141AABE21A8B50A0020B02A /* MainEditor Scene */ = {
 			isa = PBXGroup;
 			children = (
-				B141AAC121A8B5510020B02A /* MainEditorViewController.swift */,
-				B1521DE821D4A1C00051DDF2 /* Helper */,
+				1A3E4CE521D570C000EB7DC9 /* Helper */,
+				1A3E4CE321D56FAB00EB7DC9 /* editorViewController.swift */,
 			);
 			path = "MainEditor Scene";
-			sourceTree = "<group>";
-		};
-		B1521DE821D4A1C00051DDF2 /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-				B141AAC321A8B8CB0020B02A /* videoPlayerView.swift */,
-				B1521DE921D4A1DA0051DDF2 /* AVAssetExtension.swift */,
-			);
-			name = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,9 +143,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B141AABA21A8B4A80020B02A /* Build configuration list for PBXNativeTarget "Speech Editor" */;
 			buildPhases = (
+				F3349E43EA2BCA99085250EF /* [CP] Check Pods Manifest.lock */,
 				B141AAA421A8B49A0020B02A /* Sources */,
 				B141AAA521A8B49A0020B02A /* Frameworks */,
 				B141AAA621A8B49A0020B02A /* Resources */,
+				6E8AE0EC52E086ECF50CE1C6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -163,16 +204,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6E8AE0EC52E086ECF50CE1C6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Speech Editor/Pods-Speech Editor-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/KDDragAndDropCollectionViews/KDDragAndDropCollectionViews.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KDDragAndDropCollectionViews.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Speech Editor/Pods-Speech Editor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3349E43EA2BCA99085250EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Speech Editor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B141AAA421A8B49A0020B02A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B141AAAE21A8B49A0020B02A /* MainViewController.swift in Sources */,
-				B141AAC221A8B5510020B02A /* MainEditorViewController.swift in Sources */,
+				1A3E4CF021D5710A00EB7DC9 /* AAPlayerActivityIndicicatorView.swift in Sources */,
+				1A3E4CED21D5710A00EB7DC9 /* AAPlayerSlider.swift in Sources */,
+				1A3E4CEE21D5710A00EB7DC9 /* AAPlayButton.swift in Sources */,
 				B141AAAC21A8B49A0020B02A /* AppDelegate.swift in Sources */,
 				B1521DEA21D4A1DA0051DDF2 /* AVAssetExtension.swift in Sources */,
-				B141AAC421A8B8CB0020B02A /* videoPlayerView.swift in Sources */,
+				1A3E4CE421D56FAB00EB7DC9 /* editorViewController.swift in Sources */,
+				1A3E4CEF21D5710A00EB7DC9 /* AAPlayer.swift in Sources */,
+				1A3E4CEC21D5710A00EB7DC9 /* AAPlayerRotateButton.swift in Sources */,
+				1A3E4CF121D5710A00EB7DC9 /* AAPlayProgressView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +401,7 @@
 		};
 		B141AABB21A8B4A80020B02A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68AEEA29F2AD74055335E085 /* Pods-Speech Editor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -334,6 +420,7 @@
 		};
 		B141AABC21A8B4A80020B02A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58DB3882203144E8E632A647 /* Pods-Speech Editor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

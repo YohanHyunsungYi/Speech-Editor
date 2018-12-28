@@ -33,38 +33,6 @@
             endingLineNumber = "40"
             landmarkName = "ejectAudio()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Speech_Editor.MainEditorViewController.(ejectAudio in _46920CF1D21AD7DC31F20DAE08D0CB6C)() -&gt; ()"
-                  moduleName = "Speech Editor"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/hyunsungyi/Source%20Code/AOT/Speech%20Editor/MainEditor%20Scene/MainEditorViewController.swift"
-                  timestampString = "567584233.4094141"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "40"
-                  endingLineNumber = "40"
-                  offsetFromSymbolStart = "261">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Bool, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Speech_Editor.MainEditorViewController.(ejectAudio in _46920CF1D21AD7DC31F20DAE08D0CB6C)() -&gt; ()"
-                  moduleName = "Speech Editor"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/hyunsungyi/Source%20Code/AOT/Speech%20Editor/MainEditor%20Scene/MainEditorViewController.swift"
-                  timestampString = "567584233.412153"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "41"
-                  endingLineNumber = "41"
-                  offsetFromSymbolStart = "34">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
