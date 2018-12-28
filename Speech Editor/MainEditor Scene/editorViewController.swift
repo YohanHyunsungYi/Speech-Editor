@@ -2,7 +2,7 @@
 //  editorViewController.swift
 //  Speech Editor
 //
-//  Created by Yi, Yohan [GCB-OT NE] on 12/27/18.
+//  Created by Hyun sung Yi on 12/27/18.
 //  Copyright © 2018 Yohan Hyunsung Yi. All rights reserved.
 //
 
@@ -16,41 +16,85 @@ import Photos
 class EditorViewController: UIViewController, AAPlayerDelegate {
     
     @IBOutlet weak var videoPlayerView: AAPlayer!
+    var audioPlayer = AVAudioPlayer()
     
     var videoURLOptional: URL?
     var audioURL: URL?
     
-    var audioPlayer = AVAudioPlayer()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         guard let videoURL = videoURLOptional else { return }
-        videoPlayerView.delegate = self
 
-        // Pop UP Activity Indicator Start
+        // MARK: 1 - Pop UP Activity Indicator Start
         
-        ejectAudio(videoURL)
+        // MARK: 2 - Extract Audio from Video
+        audioURL = extractAudio(videoURL: videoURL)
+
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: audioURL!)
+        }
+        catch { print("ERROR") }
+        audioPlayer.play()
+        
+        // MARK: 3 - Audio to Text
         getSpeechToText()
         
-        // Pop UP Activity Indicator Stop
-        setupMainView(videoURL)
+        // MARK: 4 - Pop UP Activity Indicator Stop
+        
+        // MARK: 5 - Setup View
+        setupMainView(videoURL: videoURL)
     }
     
-    private func ejectAudio(_ videoURL: URL) {
-        let path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
-        let url = NSURL(fileURLWithPath: path)
-        audioURL = url.appendingPathComponent("tempAudio.m4a")
-        let asset = AVURLAsset(url: videoURL, options: nil)
+    private func extractAudio(videoURL: URL) -> URL? {
         
-//        ecjectAudioFile(asset, completion: <#(Data?) -> ()#>)
-
+        // Create a composition
+        let composition = AVMutableComposition()
+        do {
+            let sourceUrl = videoURL
+            let asset = AVURLAsset(url: sourceUrl)
+            guard let audioAssetTrack = asset.tracks(withMediaType: AVMediaType.audio).first else { return nil }
+            let audioCompositionTrack = composition.addMutableTrack(withMediaType: AVMediaType.audio, preferredTrackID: kCMPersistentTrackID_Invalid)
+            try audioCompositionTrack?.insertTimeRange(audioAssetTrack.timeRange, of: audioAssetTrack, at: CMTime.zero)
+        } catch {
+            print(error)
+        }
+        
+        // Get url for output
+        let tempDocUrl: URL = (FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first)!
+        let tempOutputUrl = tempDocUrl.appendingPathComponent("extractedAudio.m4a")
+        if FileManager.default.fileExists(atPath: tempOutputUrl.path) {
+            try? FileManager.default.removeItem(atPath: tempOutputUrl.path)
+        }
+        
+        // Create an export session
+        let exportSession = AVAssetExportSession(asset: composition, presetName: AVAssetExportPresetPassthrough)!
+        exportSession.outputFileType = AVFileType.m4a
+        exportSession.outputURL = tempOutputUrl
+        
+        // Export file
+        exportSession.exportAsynchronously {
+            guard case exportSession.status = AVAssetExportSession.Status.completed else { return }
+            DispatchQueue.main.async {
+                // Present a UIActivityViewController to share audio file
+                guard let outputURL = exportSession.outputURL else { return }
+                let activityViewController = UIActivityViewController(activityItems: [outputURL], applicationActivities: [])
+                self.present(activityViewController, animated: true, completion: nil)
+            }
+        }
+        
+//        // Convert to WAV filetype
+//        let docUrl: URL = (FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first)!
+//        let outputUrl = docUrl.appendingPathComponent("extractedAudio.m4a")
+//        convertAudio(url: tempOutputUrl, outputURL: outputUrl)
+        
+        return tempOutputUrl
     }
     
     private func getSpeechToText() {
 
     }
     
-    private func setupMainView(_ videoURL: URL) {
+    private func setupMainView(videoURL: URL) {
         // Set Up Player
         videoPlayerView.delegate = self
         videoPlayerView.playVideo(videoURL)
@@ -71,54 +115,6 @@ extension EditorViewController {
 
 //MARK: Helper
 extension EditorViewController {
-
     
-    func ecjectAudioFile(_ item: AVPlayerItem, completion: @escaping (Data?) -> ()) {
-        guard item.asset.isExportable else {
-            completion(nil)
-            return
-        }
-        
-        let composition = AVMutableComposition()
-        let compositionVideoTrack = composition.addMutableTrack(withMediaType: AVMediaType.video, preferredTrackID: CMPersistentTrackID(kCMPersistentTrackID_Invalid))
-        let compositionAudioTrack = composition.addMutableTrack(withMediaType: AVMediaType.audio, preferredTrackID: CMPersistentTrackID(kCMPersistentTrackID_Invalid))
-        
-        let sourceVideoTrack = item.asset.tracks(withMediaType: AVMediaType.video).first!
-        let sourceAudioTrack = item.asset.tracks(withMediaType: AVMediaType.audio).first!
-        do {
-            try compositionVideoTrack!.insertTimeRange(CMTimeRangeMake(start: CMTime.zero, duration: item.duration), of: sourceVideoTrack, at: CMTime.zero)
-            try compositionAudioTrack!.insertTimeRange(CMTimeRangeMake(start: CMTime.zero, duration: item.duration), of: sourceAudioTrack, at: CMTime.zero)
-        } catch(_) {
-            completion(nil)
-            return
-        }
-        
-        let compatiblePresets = AVAssetExportSession.exportPresets(compatibleWith: composition)
-        var preset: String = AVAssetExportPresetPassthrough
-        if compatiblePresets.contains(AVAssetExportPreset1920x1080) { preset = AVAssetExportPreset1920x1080 }
-        
-        guard
-            let exportSession = AVAssetExportSession(asset: composition, presetName: preset),
-            exportSession.supportedFileTypes.contains(AVFileType.mp4) else {
-                completion(nil)
-                return
-        }
-        
-        var tempFileUrl = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent("temp_video_data.mp4", isDirectory: false)
-        tempFileUrl = URL(fileURLWithPath: tempFileUrl.path)
-        
-        exportSession.outputURL = tempFileUrl
-        exportSession.outputFileType = AVFileType.mp4
-        let startTime = CMTimeMake(value: 0, timescale: 1)
-        let timeRange = CMTimeRangeMake(start: startTime, duration: item.duration)
-        exportSession.timeRange = timeRange
-        
-        exportSession.exportAsynchronously {
-            print("\(tempFileUrl)")
-            print("\(exportSession.error)")
-            let data = try? Data(contentsOf: tempFileUrl)
-            _ = try? FileManager.default.removeItem(at: tempFileUrl)
-            completion(data)
-        }
-    }
+    
 }
